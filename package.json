@@ -1,0 +1,47 @@
+{
+  "name": "angular2-webpack",
+  "version": "1.0.0",
+  "description": "A webpack starter for angular 2",
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress --port 9090 --host 0.0.0.0 --colors",
+    "test": "karma start",
+    "build": "rimraf dist/* && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "aot": "webpack --config config/webpack.aot.js --config config/webpack.aot.js --progress --profile --bail"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "^4.2.6",
+    "@angular/common": "^4.2.6",
+    "@angular/compiler-cli": "^4.2.6",
+    "@angular/core": "^4.2.6",
+    "@angular/forms": "^4.2.6",
+    "@angular/http": "^4.2.6",
+    "@angular/platform-browser": "^4.2.6",
+    "@angular/platform-browser-dynamic": "^4.2.6",
+    "@angular/platform-server": "^4.2.6",
+    "@angular/router": "^4.2.6",
+    "core-js": "^2.4.1",
+    "html-webpack-plugin": "^2.26.0",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.12"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^4.2.6",
+    "@angular/compiler-cli": "^4.2.6",
+    "@ngtools/webpack": "^1.5.1",
+    "@types/cordova": "0.0.34",
+    "@types/cordova-plugin-file": "0.0.3",
+    "@types/cordova-plugin-splashscreen": "0.0.3",
+    "@types/node": "^6.0.45",
+    "ajv": "^5.2.2",
+    "copy-webpack-plugin": "^4.0.1",
+    "html-webpack-plugin": "^2.29.0",
+    "node-sass": "^4.5.3",
+    "npm-check-updates": "^2.8.0",
+    "raw-loader": "^0.5.1",
+    "tslint": "^4.3.1",
+    "typescript": "^2.4.1",
+    "webpack": "^3.1.0"
+  }
+}
